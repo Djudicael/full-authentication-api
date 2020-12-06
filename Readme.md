@@ -1,0 +1,1 @@
+This project is more advanced than my other authentication project it include refresh token with blacklisting in redis and register using postgres.

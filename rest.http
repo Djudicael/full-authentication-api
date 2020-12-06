@@ -1,0 +1,41 @@
+GET  http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW1hemluZyIsImlhdCI6MTYwNzIxNDc4NywiZXhwIjoxNjA3MjE4Mzg3LCJhdWQiOiIxNSIsImlzcyI6ImRqbXhDcmVhdGlvbiIsInN1YiI6IjE1In0.omGW_mAGal3XWG4kIbkUxdHAIf5lhrqxUUcxak137TU
+
+### Login route
+POST  http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"tatayoyo7@email.com",
+    "password":"12345"
+  
+}
+
+
+### register route
+POST  http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email":"tatayoyo9@email.com",   
+    "username":"djudi9",
+    "lastname":"Doe9",
+    "firstname":"Judicael9",
+    "password":"12345"
+}
+
+### refresh token route
+POST  http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDcyODM3ODcsImV4cCI6MTYzODg0MTM4NywiYXVkIjoiMTUiLCJpc3MiOiJkam14Q3JlYXRpb24ifQ.cB-kgFW5iGZPVmu1_O5uQb37XVicDWicmrfOabPUD88"
+}
+
+### logout route
+DELETE  http://localhost:3000/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDcyODQ1MzQsImV4cCI6MTYzODg0MjEzNCwiYXVkIjoiMTUiLCJpc3MiOiJkam14Q3JlYXRpb24ifQ.T4EGTGJstFGV5o98TOv6nXhx8CE46-0lbxM-owQiz5c"
+}
